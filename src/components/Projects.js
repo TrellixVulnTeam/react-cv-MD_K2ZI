@@ -22,6 +22,8 @@ const Projects = props => {
                 <div className="progress mt-2">
                   <div
                     className="progress-bar"
+                    data-aos="fade-right"
+                    data-aos-duration="4000"
                     role="progressbar"
                     style={{ width: nbreExp }}
                     aria-valuenow="5"

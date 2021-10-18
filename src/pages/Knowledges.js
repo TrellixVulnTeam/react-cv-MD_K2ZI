@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Navigation from "../components/Navigation";
 import Projects from "../components/Projects";
+import Aos from "aos";
+
+Aos.init({ duration: 200 });
 
 class Knowledges extends Component {
   state = {
@@ -29,10 +32,10 @@ class Knowledges extends Component {
 
     return (
       <>
-        <Navigation />
+        <Navigation imgchaque="../../../images/mdTwo.webp" />
         <div className="col-xl  ">
           <h1 className="profile display-4 fw-bolder">Knowledges</h1>
-          <div className="projectBg px-3">
+          <div className="projectBg px-3" data-aos="fade-up">
             <div className="row">
               <Projects
                 languages={languages}

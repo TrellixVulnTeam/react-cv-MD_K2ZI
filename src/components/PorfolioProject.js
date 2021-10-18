@@ -7,6 +7,7 @@ const PorfolioProject = props => {
         <a
           key={myFolio.id}
           target="_blank"
+          rel="noreferrer"
           href={myFolio.myLink}
           className="text-decoration-none text-dark card  "
           style={{

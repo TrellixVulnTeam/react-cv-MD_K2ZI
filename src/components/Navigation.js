@@ -2,7 +2,7 @@ import React from "react";
 
 import { NavLink } from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = props => {
   let myNavigation =
     "  myNavigation text-right p-5 text-light d-flex flex-column align-middle";
   let navItem = "nav-item p-4  ";
@@ -15,14 +15,15 @@ const Navigation = () => {
 
   return (
     <div className="col-xl-3">
-      <div className="profilNamePhoto d-flex justify-content-center p-5">
+      <div className="profilNamePhoto d-flex justify-content-center px-5 mb-4 my-2">
         <h1 className="display-3 fw-bold  ">
           <p className=" display-6 text-dark">Developpeur Web</p>
           MAHAMOUD
           <br />
           MOUSSA
         </h1>
-        {/* <img scr="../../../images/un.webp" alt="photo" /> */}
+
+        <img src={props.imgchaque} className="card-img-top " alt="myProfil" />
       </div>
       <div className={myNavigation}>
         <div className="items">
@@ -77,7 +78,6 @@ const Navigation = () => {
           <i className={iconR("fab fa-", "github")}></i>
           <i className={iconR("fab fa-", "linkedin")}></i>
         </div>
-        <p className="text-center p-3">From Moussa Mahamoud</p>
       </div>
     </div>
   );

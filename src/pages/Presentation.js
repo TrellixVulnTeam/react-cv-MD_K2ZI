@@ -1,25 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navigation from "../components/Navigation";
+import Aos from "aos";
 
 const Presentation = () => {
+  useEffect(() => {
+    Aos.init({ duration: 200 });
+  });
+
   return (
     <>
-      <Navigation />
+      <Navigation imgchaque="../../../images/profil.webp" />
       <div className="col-xl">
-        <h1 className="profile display-4 fw-bolder">À propos</h1>
-        <div className="boxRec  display-6">
+        <h1 className="profile display-4 fw-bolder">About</h1>
+        <div className="boxRec  display-6" data-aos="fade-up">
           <p>
-            Ted Saunders est un photographe primé avec un talent pour capturer
-            les gens dans leur essence. Ayant fondé Tedshots en 2010, Ted est
-            fier de servir des centaines de clients partout dans le monde, des
-            grandes entreprises telles que Salesforce et Linked In, aux
-            particuliers qui ont simplement besoin d'un excellent portrait.{" "}
+            Développeur web curieux, autonome, rigoureux, j'aime les sites
+            simples, rapides et efficaces. Un sens de l'écoute et du service
+            renforcé par 4 ans d'expérience à travailler sur des projets variés,
+            une expertise technique en constante progression grâce à des
+            formations .
             <br />
             <br />
-            Ted est un assistant de caméra polyvalent, lorsqu'il ne prend pas de
-            photo à la tête, Ted dirige une agence de création multimédia
-            appelée Infinit Studios , où il crée du contenu vidéo pour les
-            marques et les entreprises.
+            Motivé par le besoin de faire toujours mieux et appuyer par de
+            solides bases acquises lors de mon parcours, je prends plaisir à
+            relever de nouveaux challenges. Actuellement en poste, je m'épanouis
+            avec l'équipe d' Apple.
           </p>
 
           <br />
