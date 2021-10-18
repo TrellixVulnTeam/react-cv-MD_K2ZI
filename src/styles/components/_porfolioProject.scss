@@ -1,0 +1,16 @@
+.profilProject {
+  @extend %bgGreyLight;
+}
+.card {
+  filter: grayscale(100%);
+  transition: all 0.09s ease-in;
+
+  padding: 0;
+
+  &:hover {
+    box-shadow: 10px 10px 10px rgb(240, 240, 240);
+    transform: scale(1.01);
+    border: 10px;
+    filter: grayscale(1%);
+  }
+}

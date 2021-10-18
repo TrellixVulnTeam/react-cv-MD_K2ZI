@@ -1,0 +1,20 @@
+.boxRec {
+  @extend %bgGreyLight;
+
+  .btn {
+    @include btnOrange(none, $orangeF);
+    width: 30%;
+    transition: all 0.24s ease-in;
+    transform: translateY(10px);
+    &:hover {
+      @include btnOrange($orangeF, #fff);
+      transform: translateY(-10px);
+    }
+  }
+
+  .recBlanc {
+    width: 4px;
+    height: 100px;
+    background: $greyDark;
+  }
+}

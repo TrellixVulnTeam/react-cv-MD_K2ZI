@@ -1,0 +1,15 @@
+.projectBg {
+  background: rgb(252, 252, 252);
+  height: 100vh;
+  padding: 30px;
+  border-radius: 30px;
+
+  .blocProgress {
+    .progress {
+      background: $greyDark;
+    }
+    .progress-bar {
+      background: $orangeF;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.profile {
+  font-size: 120px;
+}
+
+.profilNamePhoto {
+  writing-mode: vertical-lr;
+
+  text-align: end;
+
+  @extend %flexContent;
+  color: $orangeF;
+  h1,
+  p {
+    margin: 0;
+  }
+}
+.myNavigation {
+  //   width: 40%;
+  background: $orangeF;
+  height: 75vh;
+  padding-top: 120px;
+
+  .items {
+    padding: 10px 0;
+  }
+  .navLink li {
+    &:hover {
+      font-weight: bold;
+      transition: all 0.1s ease-in;
+      transform: translateY(-3px);
+    }
+
+    i {
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+.myReseaux {
+  i:nth-child(1) {
+    &:hover {
+      transition: all 0.24s ease-in;
+      color: #3b5998;
+      transition: all 0.1s ease-in;
+      transform: translateY(-3px);
+    }
+  }
+  i:nth-child(2) {
+    &:hover {
+      transition: all 0.24s ease;
+      color: #000;
+      transition: all 0.1s ease-in;
+      transform: translateY(-3px);
+    }
+  }
+  i:nth-child(3) {
+    &:hover {
+      transition: all 0.14s ease-in;
+      color: #0e76a8;
+      transition: all 0.1s ease-in;
+      transform: translateY(-3px);
+    }
+  }
+}

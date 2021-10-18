@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap");
+$brown: #cc9966;
+$greyDark: #333333;
+$orangeF: #f05225;
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Raleway", sans-serif;
+}
+%flexContent {
+  display: flex;
+  flex-direction: column;
+}
+%bgGreyLight {
+  background: rgb(252, 252, 252);
+  height: 100vh;
+  padding: 30px;
+  border-radius: 30px;
+}
+@mixin btnOrange($color, $typo) {
+  background: $color;
+  font-weight: bold;
+  border: 5px solid $orangeF;
+  padding: 10px 20px;
+  color: $typo;
+}
