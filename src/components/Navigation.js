@@ -73,7 +73,7 @@ const Navigation = props => {
           </ul>
         </div>
 
-        <div className="myReseaux d-flex justify-content-center">
+        <div className="myReseaux d-flex justify-content-center ">
           <i className={iconR("fab fa-", "facebook")}></i>
           <i className={iconR("fab fa-", "github")}></i>
           <i className={iconR("fab fa-", "linkedin")}></i>

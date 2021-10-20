@@ -1,71 +1,41 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Navigation from "../components/Navigation";
 import Aos from "aos";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const Contact = () => {
+  let myFlex =
+    "blocChargement display-1 d-flex flex-column justify-content-center align-item-center h-50 m-auto w-100  text-center mx-auto fw-bolder ";
+
   useEffect(() => {
     Aos.init({ duration: 200 });
   });
+  let $orangeF = "#f05225";
   return (
     <>
       <Navigation imgchaque="../../../images/mdOne.webp" />
       <div className="col-xl ">
         <h1 className="profile display-4 fw-bolder">Contact</h1>
-        <div className="row ">
-          <div className="profileDeux" data-aos="fade-up">
-            <div className="app-form ">
-              <div className="app-form-group">
-                <input className="app-form-control " placeholder="NAME" />
-              </div>
-              <div className="app-form-group">
-                <input className="app-form-control" placeholder="EMAIL" />
-              </div>
-              <div className="app-form-group">
-                <input className="app-form-control" placeholder="CONTACT NO" />
-              </div>
-              <div className="app-form-group message">
-                <input className="app-form-control" placeholder="MESSAGE" />
-              </div>
-              <div className="app-form-group buttons">
-                <button className="app-form-button">CANCEL</button>
-                <button className="app-form-button">SEND</button>
-              </div>
-            </div>
+        <div className={myFlex}>
+          <h1>
+            <i className="fas fa-map-pin" style={{ color: "#f05225" }}></i>{" "}
+            Valence
+          </h1>
 
-            <ul className="contact ">
-              <li>
-                <i className="fas fa-map-marked-alt"></i> Valence
-              </li>
-              <li>
-                <i className="fas fa-phone-alt"></i> 06.90.98.43.12
-              </li>
-              <li>
-                <i className="far fa-envelope-open"></i> Manuscrit974@gmail.com
-              </li>
-            </ul>
-          </div>
+          <CopyToClipboard text="06.69s">
+            <h1 onClick={() => alert("Numero copié")}>
+              <i className="fas fa-phone-alt" style={{ color: "#f05225" }}></i>{" "}
+              06.69.78.65.56
+            </h1>
+          </CopyToClipboard>
+
+          <h1>
+            {" "}
+            <i class="far fa-paper-plane" style={{ color: "#f05225" }}></i>{" "}
+            Manuscrit2020@gmail.com
+          </h1>
         </div>
       </div>
-      {/* <div className="col-xl">
-        <div className="app-form ">
-          <div className="app-form-group">
-            <input className="app-form-control" placeholder="NAME" />
-          </div>
-          <div className="app-form-group">
-            <input className="app-form-control" placeholder="EMAIL" />
-          </div>
-          <div className="app-form-group">
-            <input className="app-form-control" placeholder="CONTACT NO" />
-          </div>
-          <div className="app-form-group message">
-            <input className="app-form-control" placeholder="MESSAGE" />
-          </div>
-          <div className="app-form-group buttons">
-            <button className="app-form-button">CANCEL</button>
-            <button className="app-form-button">SEND</button>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 };

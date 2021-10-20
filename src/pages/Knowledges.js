@@ -81,7 +81,7 @@ class Knowledges extends Component {
             <div className="row mt-2 d-flex ">
               <div className="row">
                 <h1 className="fw-bolder pt-1 pb-3">
-                  <i class="far fa-grin-hearts"></i> Centres d'interêts
+                  <i className="far fa-grin-hearts"></i> Centres d'interêts
                 </h1>
                 <div className="mt-2 d-flex justify-content-between flex-row">
                   <h2>

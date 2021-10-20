@@ -1,0 +1,73 @@
+.bgChargement {
+  background: #fff;
+  height: 100vh;
+  color: #fff;
+
+  .blocChargement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    color: #fff;
+    animation: flash 1s linear infinite 0.1s;
+  }
+  p:nth-child(1) {
+    color: $orangeF;
+
+    animation-delay: 0.2s;
+  }
+  p:nth-child(2) {
+    color: $orangeF;
+    animation: flash 1s linear infinite 0.2s;
+  }
+  p:nth-child(3) {
+    color: $orangeF;
+    animation: flash 1s linear infinite 0.3s;
+  }
+  p:nth-child(4) {
+    color: $orangeF;
+    animation: flash 1s linear infinite 0.4s;
+  }
+  p:nth-child(5) {
+    color: $orangeF;
+    animation: flash 1s linear infinite 0.5s;
+  }
+  p:nth-child(6) {
+    color: $orangeF;
+    animation: flash 1s linear infinite 0.6s;
+  }
+  p:nth-child(7) {
+    color: $orangeF;
+    animation: flash 1s linear infinite 0.7s;
+  }
+  p:nth-child(8) {
+    color: $orangeF;
+    animation: flash 1s linear infinite 0.8s;
+  }
+  p:nth-child(9) {
+    color: $orangeF;
+    animation: flash 1s linear infinite 0.9s;
+  }
+  p:nth-child(10) {
+    color: $orangeF;
+    animation: flash 1s linear infinite 1s;
+  }
+
+  @keyframes flash {
+    0% {
+      color: $orangeF;
+    }
+    90% {
+      color: #000;
+    }
+    100% {
+      color: $orangeF;
+    }
+  }
+}
+
+.fonduChargement {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}

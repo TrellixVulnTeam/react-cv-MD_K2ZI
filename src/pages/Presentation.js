@@ -7,8 +7,13 @@ const Presentation = () => {
     Aos.init({ duration: 200 });
   });
 
+  // function removeEffect() {
+  //   window.classList.add("fonduChargement");
+  // }
+
   return (
     <>
+      {/* <Chargement /> */}
       <Navigation imgchaque="../../../images/profil.webp" />
       <div className="col-xl">
         <h1 className="profile display-4 fw-bolder">About</h1>
