@@ -8,14 +8,9 @@ Aos.init({ duration: 200 });
 class Knowledges extends Component {
   state = {
     languages: [
+      { id: 1, techno: "Javascript ", icon: "fab fa-js-square ", xp: 1.2 },
       { id: 2, techno: "HTML ", icon: "fab fa-html5 ", xp: 1.98 },
       { id: 3, techno: "Scss ", icon: "fab fa-sass", xp: 1.95 },
-      {
-        id: 1,
-        techno: "Javascript ",
-        icon: "fab fa-js-square ",
-        xp: 1.2
-      },
       { id: 4, techno: "Bootstrap ", icon: "fab fa-bootstrap", xp: 2 },
       { id: 5, techno: "Reactjs ", icon: "fab fa-react ", xp: 1.5 }
     ],

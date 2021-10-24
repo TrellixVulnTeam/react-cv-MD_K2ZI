@@ -14,16 +14,17 @@ const Projects = props => {
 
           return (
             <>
-              <div className="blocProgress">
-                <h2 key={item.id} className="fw-bold">
+              <div key={item.id} className="blocProgress">
+                <h2 className="fw-bold">
                   {item.techno}
                   <i className={item.icon}></i>
                 </h2>
+
                 <div className="progress mt-2">
                   <div
                     className="progress-bar"
                     data-aos="fade-right"
-                    data-aos-duration="4000"
+                    data-aos-delay="700"
                     role="progressbar"
                     style={{ width: nbreExp }}
                     aria-valuenow="5"

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Navigation from "../components/Navigation";
 import Aos from "aos";
 import { CopyToClipboard } from "react-copy-to-clipboard";
@@ -10,10 +10,11 @@ const Contact = () => {
   useEffect(() => {
     Aos.init({ duration: 200 });
   });
-  let $orangeF = "#f05225";
+
   return (
     <>
       <Navigation imgchaque="../../../images/mdOne.webp" />
+
       <div className="col-xl ">
         <h1 className="profile display-4 fw-bolder">Contact</h1>
         <div className={myFlex}>
@@ -30,8 +31,7 @@ const Contact = () => {
           </CopyToClipboard>
 
           <h1>
-            {" "}
-            <i class="far fa-paper-plane" style={{ color: "#f05225" }}></i>{" "}
+            <i className="far fa-paper-plane" style={{ color: "#f05225" }}></i>{" "}
             Manuscrit2020@gmail.com
           </h1>
         </div>
